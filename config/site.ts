@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Hirasys",
-  description: "All in one recruitment solution",
+  name: "Hirasys | Best Next-Gen Recruitment System ",
+  description: "Complete solution for streamlined recruitment and onboarding platform designed to transform the way companies manage their hiring processes. It offers a comprehensive suite of tools to ensure a smooth onboarding experience for new hires.",
   navItems: [
     {
       label: "Features",
