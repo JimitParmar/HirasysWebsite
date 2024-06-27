@@ -55,7 +55,7 @@ export default function Home() {
     </div>
   </section>
   
-  <section className="flex flex-col items-center justify-center gap-4  md:py-1">
+  <section className="flex flex-col items-center justify-center">
     <div className="inline-block max-w-full text-center pt-40">
         <h1 className={subtitle({size:"md"})}>Quality hires come from quality systems</h1>
         <div className="static flex justify-center pt-16 px-10">
@@ -131,7 +131,7 @@ export default function Home() {
       <div className="flex text-center md:pt-20">
           <h1 className={subtitle({size:"md"})}>Choose from 20+ Modules to find the best candidates.</h1>
       </div>
-      <div className="grid grid-cols-4 md:flex-row text-black items-center justify-start gap-4 md:gap-8 pt-2 md:pt-10 px-2">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:flex-row text-black gap-8 md:gap-8 pt-10 md:pt-10">
         <ICG/>
         <ResumeParser/>
         <PA/>

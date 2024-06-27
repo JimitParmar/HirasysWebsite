@@ -8,12 +8,12 @@ export function ICG() {
 
   return (
     <>
-      <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Ideal Candidate Generation</Button>
+      <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] max-w-[200px] p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Ideal Candidate Generation</Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Idea Candidate Generation</ModalHeader>
+              <ModalHeader className="flex flex-col">Ideal Candidate Generation</ModalHeader>
               <ModalBody>
                 <p> 
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -53,12 +53,12 @@ export function ResumeParser() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Resume Parser</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Resume Parser</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Resume Parser</ModalHeader>
+                <ModalHeader className="flex flex-col">Resume Parser</ModalHeader>
                 <ModalBody>
                   <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -98,12 +98,12 @@ export function PA() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Proctored Assessment</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Proctored Assessment</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Proctored Assessment</ModalHeader>
+                <ModalHeader className="flex flex-col">Proctored Assessment</ModalHeader>
                 <ModalBody>
                   <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -143,12 +143,12 @@ export function CS() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Coding Sandbox</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Coding Sandbox</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Coding Sandbox</ModalHeader>
+                <ModalHeader className="flex flex-col">Coding Sandbox</ModalHeader>
                 <ModalBody>
                   <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -188,12 +188,12 @@ export function AI() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">AI Interview</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">AI Interview</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">AI Interview</ModalHeader>
+                <ModalHeader className="flex flex-col">AI Interview</ModalHeader>
                 <ModalBody>
                   <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -233,12 +233,12 @@ export function CF() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Custom Filter</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Custom Filter</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Custom Filter</ModalHeader>
+                <ModalHeader className="flex flex-col">Custom Filter</ModalHeader>
                 <ModalBody>
                   <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -278,12 +278,12 @@ export function PI() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Personal Interview</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Personal Interview</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">Personal Interview</ModalHeader>
+                <ModalHeader className="flex flex-col">Personal Interview</ModalHeader>
                 <ModalBody>
                   <p> 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -323,7 +323,7 @@ export function CR() {
   
     return (
       <>
-        <Button onPress={onOpen} className="mediumtransition bg-gray-100 ease-in-out delay-150 p-10 md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Recommend Courses</Button>
+        <Button onPress={onOpen} className="transition bg-gray-100 ease-in-out delay-150 p-10 max-w-[200px] md:p-10 text-xs lg:text-base text-wrap hover:text-white hover:bg-blue-600 hover:scale-105 font-medium duration-300">Recommend Courses</Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
