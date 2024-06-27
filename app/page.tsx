@@ -87,7 +87,7 @@ export default function Home() {
           <Link
                       isExternal
                       showAnchorIcon
-                      href="https://github.com/nextui-org/nextui"
+                      href="/"
                   >
                       Learn More.
                   </Link>
@@ -104,7 +104,7 @@ export default function Home() {
           <Link
                       isExternal
                       showAnchorIcon
-                      href="https://github.com/nextui-org/nextui"
+                      href="/"
                   >
                       Learn More.
                   </Link>
@@ -121,7 +121,7 @@ export default function Home() {
           <Link
                       isExternal
                       showAnchorIcon
-                      href="https://github.com/nextui-org/nextui"
+                      href="/"
                   >
                       Learn More.
                   </Link>
@@ -144,7 +144,7 @@ export default function Home() {
       <Link
           isExternal
           showAnchorIcon
-          href="https://github.com/nextui-org/nextui"
+          href="/"
           className="text-lg font-medium py-8"
             >
             View all Modules
