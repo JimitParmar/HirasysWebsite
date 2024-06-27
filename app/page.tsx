@@ -9,9 +9,10 @@ import { ICG, ResumeParser, PA, CS, AI, CF, PI, CR}  from "@/components/modal"
 import InfoCard from "@/components/infocard";
 import Faqs from "@/components/faqs";
 
+
 export default function Home() {
   return (
-    <><section className="flex flex-col items-center justify-center gap-8 px-8 md:py-1">
+    <><section className="flex flex-col items-center justify-center gap-8 px-8 md:py-1 ">
     <div className="flex flex-col md:flex-row items-center justify-start gap-8  ">
       <div className="max-w-2xl text-left">
         <h1 className={title({className:"text-5xl leading-[3.5rem]"})}>
@@ -55,7 +56,7 @@ export default function Home() {
     </div>
   </section>
   
-  <section className="flex flex-col items-center justify-center">
+  <section className="flex flex-col items-center justify-center ">
     <div className="inline-block max-w-full text-center pt-40">
         <h1 className={subtitle({size:"md"})}>Quality hires come from quality systems</h1>
         <div className="static flex justify-center pt-16 px-10">
@@ -150,7 +151,7 @@ export default function Home() {
             View all Modules
       </Link>
       </section>
-      <section className="flex flex-col items-center justify-center" >
+      <section className="flex flex-col items-center justify-center " >
       <div className=" w-screen bg-blue-600 pt-12 relative px-16">
         <div className="flex justify-center top-12">
           <InfoCard/>
@@ -175,8 +176,8 @@ export default function Home() {
           </Link>
           </div>
       </section>   
-      <section className="flex flex-col items-center justify-center gap-8 px-8 mt-20 md:py-1">
-    <div className="flex flex-col md:flex-row items-center justify-start gap-8  ">
+      <section className="flex flex-col items-center justify-center gap-8 px-8 mt-20 md:py-1 ">
+    <div className="flex flex-col md:flex-row items-center justify-start gap-8 ">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-semibold pb-8">
           Frequently Asked Questions&nbsp;
@@ -188,5 +189,6 @@ export default function Home() {
     </div>
   </section>
     </>
+    
   );
 }

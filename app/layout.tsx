@@ -44,7 +44,7 @@ export default function RootLayout({
       >
         <Analytics/>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="relative flex flex-col h-screen overflow-x-clip">
             <Navbar />
             <SpeedInsights/>
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
