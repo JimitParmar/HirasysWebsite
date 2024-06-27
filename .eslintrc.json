@@ -6,11 +6,11 @@
     "node": true
   },
   "extends": [
-    "next",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "eslint:recommended", "next",
   ],
   "plugins": ["@next/next","react", "unused-imports", "import", "@typescript-eslint", "jsx-a11y", "prettier"],
   "parser": "@typescript-eslint/parser",
@@ -27,6 +27,7 @@
     }
   },
   "rules": {
+    "@next/next/no-html-link-for-pages": "error",
     "no-console": "warn",
     "react/prop-types": "off",
     "react/jsx-uses-react": "off",
