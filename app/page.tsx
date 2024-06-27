@@ -12,7 +12,12 @@ import Faqs from "@/components/faqs";
 
 export default function Home() {
   return (
-    <><section className="flex flex-col items-center justify-center gap-8 px-8 md:py-1 ">
+    <><head>
+      <meta name="robots" content="index,nofollow" key ="index"/>
+      <meta name="google" content="sitelinkssearchbox" key="sitelinks" />
+    </head>
+    <section className="flex flex-col items-center justify-center gap-8 px-8 md:py-1 ">
+      
     <div className="flex flex-col md:flex-row items-center justify-start gap-8  ">
       <div className="max-w-2xl text-left">
         <h1 className={title({className:"text-5xl leading-[3.5rem]"})}>

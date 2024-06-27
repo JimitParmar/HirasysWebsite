@@ -34,8 +34,8 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <title>Hirasys</title>
-      <head />
+      <title>Hirasys | Next-Gen Recruitment System</title>
+      <head><meta name="robots" content="index,nofollow" /></head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
