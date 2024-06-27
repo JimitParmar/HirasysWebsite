@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-
+import { Analytics } from "@vercel/analytics/react"
 import { Providers } from "./providers";
 import Footer  from "@/components/footer";
 import { siteConfig } from "@/config/site";
@@ -41,6 +41,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <Analytics/>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
