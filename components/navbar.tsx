@@ -14,7 +14,7 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
-
+import {Contact, Features, Pricing, Resource, Solutions} from "./dropdown";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
@@ -30,11 +30,6 @@ export const Navbar = () => {
         inputWrapper: "bg-default-100",
         input: "text-sm",
       }}
-      endContent={
-        <Kbd className="hidden lg:inline-block" keys={["command"]}>
-          K
-        </Kbd>
-      }
       labelPlacement="outside"
       placeholder="Search..."
       startContent={
@@ -43,7 +38,6 @@ export const Navbar = () => {
       type="search"
     />
   );
-
   return (
     <NextUINavbar maxWidth="xl" position="sticky" className="overflow-x-clip">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -52,21 +46,12 @@ export const Navbar = () => {
             <h1 className={title({ color: "mainblue", size:"sm" })}>Hirasys</h1>
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-8 justify-start ml-4 py-1/2 ">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
-                )}
-                color="foreground"
-                href={item.href}
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
+        <ul className="hidden lg:flex gap-2 justify-start ml-4 py-1/2 ">
+          <Features/>
+          <Solutions/>
+          <Pricing/>
+          <Contact/>
+          <Resource/>
         </ul>
       </NavbarContent>
 
@@ -87,7 +72,12 @@ export const Navbar = () => {
       <NavbarMenu>
         {searchInput}
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
+          <Features/>
+          <Solutions/>
+          <Pricing/>
+          <Contact/>
+          <Resource/>
+          {/* {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color={
@@ -103,7 +93,7 @@ export const Navbar = () => {
                 {item.label}
               </Link>
             </NavbarMenuItem>
-          ))}
+          ))} */}
         </div>
       </NavbarMenu>
     </NextUINavbar>
