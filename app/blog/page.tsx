@@ -73,7 +73,7 @@ export default function BlogPage() {
           <div className="flex flex-col">
           <DualImage
           image="recruitment.jpeg"/>
-          <h1 className="px-5 pt-2 text-lg md:pl-12 md:pt-6 md:text-2xl font-semibold hover:underline underline-offset-4 hover:text-blue-900 dark:hover:text-blue-700">Top 10 Recruitment Softwares of 2024</h1>
+          <h1 className="px-5 pt-4 text-lg md:pl-12 md:pt-6 md:text-2xl font-semibold hover:underline underline-offset-4 hover:text-blue-900 dark:hover:text-blue-700">Top 10 Recruitment Softwares of 2024</h1>
           <p className="px-5 pt-2 md:px-12  md:pt-2 text-sm">Top applicant tracking systems to 
             shortlist and manage candidates and uncover the best talent fit for each role.</p>
             <h2 className="px-5 py-2 md:px-12  md:pt-2 font-semibold text-md">By Sanchit Warang</h2>
@@ -82,7 +82,7 @@ export default function BlogPage() {
           <div>
           <DualImage
           image="hr.jpeg"/>
-          <h1 className="px-5 pt-2 md:pl-12 md:pt-6 text-lg md:text-2xl font-semibold hover:underline underline-offset-4 hover:text-blue-900 dark:hover:text-blue-700">41 Key HR Policies & Best Practices</h1>
+          <h1 className="px-5 pt-4 md:pl-12 md:pt-6 text-lg md:text-2xl font-semibold hover:underline underline-offset-4 hover:text-blue-900 dark:hover:text-blue-700">41 Key HR Policies & Best Practices</h1>
           <p className="px-5 pt-2 md:px-12  md:pt-2 text-sm">HR policies empower and protect employees 
             and minimize business risks. Here are the best practices for developing your own.</p>
             <h2 className="px-5 py-2 md:px-12  md:pt-2 font-semibold text-md">By Atharva Wagh</h2>
