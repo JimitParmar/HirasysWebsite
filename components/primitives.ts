@@ -1,5 +1,11 @@
 import { tv } from "tailwind-variants";
-
+export const hoverborder = tv({
+  variants:{
+      color:{
+          violet: "from-[#FF1CF7] to-[#b249f8]"
+      }
+  }
+});
 export const title = tv({
   base: "tracking-tight inline font-semibold py-1/2",
   variants: {

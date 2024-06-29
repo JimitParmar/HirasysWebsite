@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle, description } from "@/components/primitives";
-import AboutCard from "@/components/card";
+import { AboutCard } from "@/components/card";
 import {Image} from "@nextui-org/image";
 import { Sourcing, Interviewing, Automating} from "@/components/chips";
 import { ICG, ResumeParser, PA, CS, AI, CF, PI, CR}  from "@/components/modal"
@@ -12,20 +12,17 @@ import Faqs from "@/components/faqs";
 
 export default function Home() {
   return (
-    <><head>
-      <meta name="robots" content="index,nofollow" key ="index"/>
-      <meta name="google" content="sitelinkssearchbox" key="sitelinks" />
-    </head>
+    <>
     <section className="flex flex-col items-center justify-center gap-8 px-8 md:py-1 ">
       
-    <div className="flex flex-col md:flex-row items-center justify-start gap-8  ">
+    <div className="flex flex-col md:flex-row items-center justify-start gap-6 px-36 ">
       <div className="max-w-2xl text-left">
         <h1 className={title({className:"text-5xl leading-[3.5rem]"})}>
           All in one platform for Hiring & Onboarding&nbsp;
         </h1>
         <br />
-        <h2 className={description({ class: "pt-6" })}>
-          Hirasys simplifies your entire recruitment process with integrated ATS,<br />
+        <h2 className={description({ class: "pt-6"})}>
+          Hirasys simplifies your entire recruitment process with integrated ATS,
           AI-driven processes, Pre-employment testing, and seamless Onboarding,
           ensuring you find the right candidate.
         </h2>
@@ -68,12 +65,12 @@ export default function Home() {
           <AboutCard/>
         </div>
       </div>
-      <h2 className={description({ className: "text-center font-light opacity-95 text-sm md:text-lg pt-9 max-w-[900px]" })}>
+      <h2 className={description({ className: "text-center font-light opacity-95 px-4 text-sm md:text-lg pt-9 max-w-[900px]" })}>
         Hirasys simplifies your entire recruitment process with integrated ATS for efficient shortlisting, 
         AI-driven tools for seamless interviewing, Automated candidate pre-employement testing and comprehensive onboarding solutions
         to ensure that the right candidates are onboarded smoothly.
         </h2>
-        <div className="max-w-[900px] pt-9">
+        <div className="max-w-[900px] pt-9 px-2">
           <Image src ="\section2.png"/>
         </div>
       <div className="flex text-center pt-20">
@@ -134,10 +131,10 @@ export default function Home() {
         </div>
         <Image className="max-w-[0px] md:max-w-[280px] md:pt-10" src ="/interview.svg"/>
       </div>
-      <div className="flex text-center md:pt-20">
+      <div className="flex text-center md:pt-20 md:px-40">
           <h1 className={subtitle({size:"md"})}>Choose from 20+ Modules to find the best candidates.</h1>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 md:flex-row text-black gap-8 md:gap-8 pt-10 md:pt-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:flex-row text-black px-8 gap-8 md:gap-8 pt-10 md:pt-10">
         <ICG/>
         <ResumeParser/>
         <PA/>

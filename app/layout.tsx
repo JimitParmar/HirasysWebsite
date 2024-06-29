@@ -34,20 +34,23 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <title>Hirasys | Best Next-Gen Recruitment System</title>
-      <head><meta name="robots" content="index,nofollow" /></head>
+      <head>
+        <meta name="robots" content="index,nofollow" />
+        <meta name="robots" content="index,nofollow" key ="index"/>
+        <meta name="google" content="sitelinkssearchbox" key="sitelinks" />
+      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >
-        {/* <Analytics/>
-        <SpeedInsights/> */}
+        <Analytics/>
+        <SpeedInsights/>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen overflow-x-clip">
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+            <main className="container mx-auto max-w-screen pt-16 flex-grow">
               {children}
             </main>
             <Footer/>

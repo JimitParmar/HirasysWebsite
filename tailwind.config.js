@@ -18,6 +18,7 @@ module.exports = {
   darkMode: "class",
   plugins: [nextui()],
   color:{
-    bgreen : '#00FD19',
+    bgreen : "#00FD19",
+    bloghover: "from-[#FF1CF7] to-[#b249f8]"
   }
 }
