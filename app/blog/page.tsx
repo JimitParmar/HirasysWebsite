@@ -56,12 +56,12 @@ export default function BlogPage() {
             image="trends.jpeg"/>
             </div>
           <div className="flex flex-col gap-2">
-            <p className="pt-6 md:pt-12 pb-3 md:pb-6 text-md font-semibold uppercase">Strategy & Leadership</p>
-            <h1 className="text-2xl md:text-5xl font-semibold md:leading-[3.5rem] pb-4 md:pb-8 hover:underline underline-offset-8 ">HR Predictions: The 2024 Workplace Trends on the Minds of HR Leaders Everywhere</h1>
-            <p className="pb-6 md:pb-8">What do HR leaders and experts across industries think about AI, the talent marketplace and key initiatives around DEI and…</p>
+            <p className="pt-6 mx-4 md:pt-12 pb-3 md:pb-6 text-md font-semibold uppercase">Strategy & Leadership</p>
+            <h1 className="text-2xl mx-4 md:text-5xl font-semibold md:leading-[3.5rem] pb-4 md:pb-8 hover:underline underline-offset-8 ">HR Predictions: The 2024 Workplace Trends on the Minds of HR Leaders Everywhere</h1>
+            <p className="pb-6 mx-4 md:pb-8">What do HR leaders and experts across industries think about AI, the talent marketplace and key initiatives around DEI and…</p>
             <a className={buttonStyles({
               variant:"bordered",
-              className:"max-w-40 p-6 text-white bg-blue-800 hover:bg-blue-600 hover:scale-105 transition-all ease-in-out delay-75 text-lg border-0",
+              className:"max-w-40 p-6 text-white bg-blue-800 hover:bg-blue-600 hover:scale-105 mx-4 transition-all ease-in-out delay-75 text-lg border-0",
               radius: "full",
               size: "md",
             })}href="">Read</a>
