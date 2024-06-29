@@ -1,8 +1,9 @@
 import { subtitle, title } from "@/components/primitives";
-import { BlogCard, CustomImage, MainBlogCard, DualImage} from "@/components/card";
+import { BlogCard, CustomImage, MainBlogCard, DualImage, OtherBlogs} from "@/components/card";
 import Image from "next/image";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { px } from "framer-motion";
+import InputMain from "@/components/input";
 
 
 export default function BlogPage() {
@@ -34,7 +35,7 @@ export default function BlogPage() {
               linkto="google.com" />
             <BlogCard
               image="/employee.jpeg"
-              title="There’s A Problem With Your Employee Wellness Program. Here’s How To Fix It"
+              title="There’s A Problem With Your Employee Wellness Program. Here's How To Fix It"
               category="Article"
               author="Sanchit Warang"
               linkto="google.com" />
@@ -88,6 +89,75 @@ export default function BlogPage() {
             <h2 className="px-5 py-2 md:px-12  md:pt-2 font-semibold text-md">By Atharva Wagh</h2>
           </div>
         </div>
+        <hr className="border-black border-1.5"/>
+        <div className="grid grid-cols-1 md:grid-cols-2 px-6 md:mx-36 gap-16 md:gap-12 py-16">
+        <div className="grid gap-y-16">
+            <OtherBlogs
+              image="/hr.jpeg"
+              title="Set for Growth: The Ins and Outs of the HR Payroll Software Market"
+              category="Human Resource"
+              author="Sakshi Upadhyay"
+              linkto="google.com" />
+            <OtherBlogs
+              image="/mental.jpeg"
+              title="The Real Impact of Flexible Work on Mental Health"
+              category="Health & Wellbeing"
+              author="Atharva Wagh"
+              linkto="google.com" />
+            <OtherBlogs
+              image="/employee.jpeg"
+              title="There’s A Problem With Your Employee Wellness Program. Here’s How To Fix It"
+              category="Article"
+              author="Sanchit Warang"
+              linkto="google.com" />
+            <OtherBlogs
+              image="/wfh.jpeg"
+              title="Remote Work Improved Our Productivity But What About Team Dynamics?"
+              category="Remote & Hybrid"
+              author="Jimit Parmar"
+              linkto="google.com" />
+          </div>
+        <div className="grid gap-y-16">
+            <OtherBlogs
+              image="/hr.jpeg"
+              title="Set for Growth: The Ins and Outs of the HR Payroll Software Market"
+              category="Human Resource"
+              author="Sakshi Upadhyay"
+              linkto="google.com" />
+            <OtherBlogs
+              image="/mental.jpeg"
+              title="The Real Impact of Flexible Work on Mental Health"
+              category="Health & Wellbeing"
+              author="Atharva Wagh"
+              linkto="google.com" />
+            <OtherBlogs
+              image="/employee.jpeg"
+              title="There’s A Problem With Your Employee Wellness Program. Here’s How To Fix It"
+              category="Article"
+              author="Sanchit Warang"
+              linkto="google.com" />
+            <OtherBlogs
+              image="/wfh.jpeg"
+              title="Remote Work Improved Our Productivity But What About Team Dynamics?"
+              category="Remote & Hybrid"
+              author="Jimit Parmar"
+              linkto="google.com" />
+          </div>
+          </div>
+        </section>
+
+
+        
+        <section className="w-screen bg-black">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div>
+            <h1 className="text-2xl md:text-5xl font-semibold mx-8 text-center md:ml-40 pt-16 pb-12 md:py-[5.6rem] text-white leading-tight">Subscribe to Hirasys's Free Newsletter...</h1>
+            </div>
+            <div>
+              <InputMain/>
+            </div>
+            </div>
+            <hr className="mx-16 md:mx-80 md:w-[50rem]"/>
         </section>
         </>
 

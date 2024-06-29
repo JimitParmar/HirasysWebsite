@@ -186,3 +186,38 @@ export function DualImage({ image}:
             
     );
 }
+
+export function OtherBlogs({ image, title, category, author, linkto }:
+    {
+        image:string,
+        title:string,
+        category:string,
+        author:string,
+        linkto:string
+    }
+ ) {
+    return(
+        <>
+        <div className="grid justify-center md:grid-cols-3">
+        <div className=" md:flex md:mx-auto f justify-center">  
+            <Image
+            removeWrapper
+            alt="Relaxing app background"
+            className="object-cover h-[140px] w-[600px] md:h-[160px] md:w-[160px] rounded hover:scale-105 transform-gpu"
+            src={image}
+            />
+        </div>
+    <div className="col-span-2 px-1">
+    <div className="flex items-center ">
+      <div className="flex flex-col ">
+        <p className="text-md md:text-xs pt-3 text-blue-700 mt-1 dark:text-blue-500 hover:underline underline-offset-4 dark:hover:text-blue-700 hover:text-blue-800 uppercase font-semibold mb-2 tracking-widest">{category}</p>
+        <h4 className=""><Link className="w-full text-black hover:underline underline-offset-4 dark:text-white dark:hover:text-blue-500 hover:text-blue-700 font-semibold md:font-semibold text-xl md:text-[1.55rem] leading-8" href={linkto}>{title}</Link></h4>
+        <p className="md:absolute md:mt-[140px] font-medium md:font-normal text-black dark:text-white text-lg md:text-sm my-4">By {author}</p>
+        <hr className="border-gray-800 mt-4 md:border-transparent md:mt-0"/>
+      </div>
+    </div>
+  </div>
+</div>
+        </>
+    );
+}
