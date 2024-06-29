@@ -7,8 +7,8 @@ export default function BlogPage() {
     <><section>
       <div className="w-full">
         <div className="text-center"><h1 className={title()}>Blog</h1></div>
-        <div className="w-[1200px] mt-32 grid grid-cols-2  mb-20 mx-auto">
-          <div className="w-[584px]">
+        <div className="w-full mt-12 md:mt-32 grid grid-cols-1 md:grid-cols-2 px-6 md:px-40 gap-8 mb-20 mx-auto">
+          <div>
             <MainBlogCard
               image="/sbl.jpeg"
               title="The Emergence of Skills-Based Learning is Vital to Teams Success"
@@ -17,7 +17,7 @@ export default function BlogPage() {
               category="Articles"
               linkto="google.com" />
           </div>
-          <div className="grid ">
+          <div className="grid gap-y-6">
             <BlogCard
               image="/hr.jpeg"
               title="Set for Growth: The Ins and Outs of the HR Payroll Software Market"
