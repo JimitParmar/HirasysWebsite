@@ -107,7 +107,7 @@ export function BlogCard({ image, title, category, author, linkto }:
     <div className="flex items-center ">
       <div className="flex flex-col ">
         <p className="text-md md:text-xs text-blue-700 mt-1 dark:text-blue-500 hover:underline underline-offset-4 dark:hover:text-blue-700 hover:text-blue-800 uppercase font-semibold mb-2 tracking-widest">{category}</p>
-        <h4 className=""><Link className="w-full text-black hover:underline underline-offset-4 dark:text-white dark:hover:text-blue-500 hover:text-blue-700 font-medium md:font-semibold text-xl md:text-[1.55rem] leading-8" href={linkto}>{title}</Link></h4>
+        <h4 className=""><Link className="w-full text-black hover:underline underline-offset-4 dark:text-white dark:hover:text-blue-500 hover:text-blue-700 font-semibold md:font-semibold text-xl md:text-[1.55rem] leading-8" href={linkto}>{title}</Link></h4>
         <p className="md:absolute md:mt-[140px] font-medium md:font-normal text-black dark:text-white text-lg md:text-sm my-4">By {author}</p>
       </div>
     </div>
@@ -118,12 +118,11 @@ export function BlogCard({ image, title, category, author, linkto }:
 }
 
 
-export function MainBlogCard({ image, title, author, readingTime, category, linkto }:
+export function MainBlogCard({ image, title, author, category, linkto }:
     {
         image:string,
         title:string,
         author:string,
-        readingTime:string,
         category: string,
         linkto:string
     }
@@ -140,7 +139,7 @@ export function MainBlogCard({ image, title, author, readingTime, category, link
             <div className="flex mt-4 md:mt-8 md:px-2">
                 <div className="flex flex-col pl-1">
                     <p className="text-md text-blue-700 dark:text-blue-500 hover:underline underline-offset-4 hover:text-blue-900 dark:hover:text-blue-700 uppercase tracking-widest font-semibold mb-3">{category}</p>
-                    <h4 className=""><Link className="text-black dark:text-white hover:underline underline-offset-4 hover:text-blue-700 dark:hover:text-blue-500 font-bold text-xl md:text-3xl"href={linkto}>{title}</Link></h4>
+                    <h4 className=""><a className="text-black dark:text-white hover:underline underline-offset-4 hover:text-blue-700 dark:hover:text-blue-500 font-bold text-2xl md:text-3xl" href={linkto}>{title}</a></h4>
                     <p className="text-black dark:text-white font-medium text-lg my-4">By {author}</p>
                 </div>
             </div></>
@@ -148,4 +147,42 @@ export function MainBlogCard({ image, title, author, readingTime, category, link
     );
 }
 
+export function CustomImage({ image}:
+    {
+        image:string,
+    }
+ ) {
+    return(
+            <>
+            <div className="flex justify-center">
+            <Image
 
+                alt="Relaxing app background"
+                className="h-[300px] w-[300px] md:h-[560px] md:w-[560px] hover:scale-105 rounded object-cover"
+                src={image} />
+            </div>
+            </>
+            
+    );
+}
+
+
+
+export function DualImage({ image}:
+    {
+        image:string,
+    }
+ ) {
+    return(
+            <>
+            <div className="flex justify-center">
+            <Image
+
+                alt="Relaxing app background"
+                className="h-[170px] w-[350px] md:h-[275px] md:w-[500px] hover:scale-105 rounded object-cover"
+                src={image} />
+            </div>
+            </>
+            
+    );
+}
