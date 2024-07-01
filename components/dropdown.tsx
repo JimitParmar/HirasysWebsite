@@ -43,9 +43,12 @@ return (
     <DropdownSection showDivider>  
       <DropdownItem
           description="A Versatile Resume Parser"
+          key="smartextract"
+          href="features/SmartExtract"
           // startContent={<AddNoteIcon className={iconClasses} />}
         >
-          SmartExtract
+        SmartExtract
+          
         </DropdownItem>
         <DropdownItem
           description="Various types of Proctored tests"

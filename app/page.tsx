@@ -6,8 +6,9 @@ import { AboutCard } from "@/components/card";
 import {Image} from "@nextui-org/image";
 import { Sourcing, Interviewing, Automating} from "@/components/chips";
 import { ICG, ResumeParser, PA, CS, AI, CF, PI, CR}  from "@/components/modal"
-import InfoCard from "@/components/infocard";
+import { InfoCard } from "@/components/infocard";
 import Faqs from "@/components/faqs";
+import { Community, Partner, Shield } from "@/components/icons";
 
 
 export default function Home() {
@@ -61,11 +62,22 @@ export default function Home() {
   <section className="flex flex-col items-center justify-center ">
     <div className="inline-block max-w-full text-center pt-40">
         <h1 className={subtitle({size:"md"})}>Quality hires come from quality systems</h1>
-        <div className="static flex justify-center pt-16 px-10">
-          <AboutCard/>
+        <div className="flex justify-center py-14 gap-9">
+          <AboutCard 
+          title="Shortlisting"
+          description="Automate candidate pre-testing processes"
+          link="/"/>
+          <AboutCard 
+          title="Interviewing"
+          description="Schedule interview with potential employees"
+          link="/"/>
+          <AboutCard 
+          title="Onboarding"
+          description="Set onboarding tasks to conclude the hiring process"
+          link="/"/>
         </div>
       </div>
-      <h2 className={description({ className: "text-center font-light opacity-95 px-4 text-sm md:text-lg pt-9 max-w-[900px]" })}>
+      <h2 className={description({ className: "text-center font-light opacity-95 px-4 text-sm md:text-lg max-w-[900px]" })}>
         Hirasys simplifies your entire recruitment process with integrated ATS for efficient shortlisting, 
         AI-driven tools for seamless interviewing, Automated candidate pre-employement testing and comprehensive onboarding solutions
         to ensure that the right candidates are onboarded smoothly.
@@ -155,12 +167,26 @@ export default function Home() {
       </section>
       <section className="flex flex-col items-center justify-center " >
       <div className=" w-screen bg-blue-600 pt-12 relative px-16">
-        <div className="flex justify-center top-12">
-          <InfoCard/>
+        <div className="grid grid-cols-1  md:flex md:justify-center  gap-8 md:gap-20 ">
+          <InfoCard
+          icon = <Partner/>
+          title="Become a customer"
+          link="/"
+          />
+          <InfoCard
+          icon = <Shield/>
+          title="Privacy Policy"
+          link="/"
+          />
+          <InfoCard
+          icon = <Community/>
+          title="Join the Community"
+          link="/"
+          />
         </div>
       </div>
       <div className="w-screen bg-blue-600 flex justify-center pt-8">
-        <h1 className={subtitle({size:"md", className:"max-w-full font-bold text-center text-white text-xl md:text-lg pt-9 max-w-[900px] mt-0"})}>Comprehensive recruitment software for quicker and more efficient hires.</h1>
+        <h1 className={subtitle({size:"md", className:"font-bold text-center text-white text-xl md:text-lg pt-9 max-w-[900px] mt-0"})}>Comprehensive recruitment software for quicker and more efficient hires.</h1>
       </div>
       <div className="w-screen bg-blue-600 flex justify-center">
       <Link
