@@ -10,7 +10,7 @@ export function AboutCard({title, description, link}:{
     link: string
 }) {
   return (
-          <Card className="max-w-[210px] md:max-w-[300px] flex justify-center">
+          <Card className="max-w-[210px] md:max-w-[300px] mx-auto">
               <CardHeader className="flex gap-3">
                   <Image
                       alt="Hirasys logo"

@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <section className="flex flex-col items-center justify-center gap-8 px-8 md:py-1 ">
       
-    <div className="flex flex-col md:flex-row items-center justify-start gap-6 px-36 ">
+    <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:px-36  ">
       <div className="max-w-2xl text-left">
         <h1 className={title({className:"text-5xl leading-[3.5rem]"})}>
           All in one platform for Hiring & Onboarding&nbsp;
@@ -60,9 +60,9 @@ export default function Home() {
   </section>
   
   <section className="flex flex-col items-center justify-center ">
-    <div className="inline-block max-w-full text-center pt-40">
+    <div className="inline-block max-w-full text-center pt-40 px-2">
         <h1 className={subtitle({size:"md"})}>Quality hires come from quality systems</h1>
-        <div className="flex justify-center py-14 gap-9">
+        <div className="grid grid-cols-1 md:flex md:justify-center py-8 md:py-14 gap-9">
           <AboutCard 
           title="Shortlisting"
           description="Automate candidate pre-testing processes"
@@ -166,8 +166,8 @@ export default function Home() {
       </Link>
       </section>
       <section className="flex flex-col items-center justify-center " >
-      <div className=" w-screen bg-blue-600 pt-12 relative px-16">
-        <div className="grid grid-cols-1  md:flex md:justify-center  gap-8 md:gap-20 ">
+      <div className=" w-screen bg-blue-600 pt-16 relative px-20">
+        <div className="grid grid-cols-1 md:flex md:justify-center gap-8 md:gap-0 ">
           <InfoCard
           icon = <Partner/>
           title="Become a customer"

@@ -9,10 +9,11 @@ import { InfoCard, StepCard } from "@/components/infocard";
 
 export default function SmartExtract() {
   return (
-    <><section className="w-full flex justify-center">
-      <div className="flex flex-col md:flex-row items-center justify-start gap-8">
+    <>
+    <section className="w-full flex justify-center px-6">
+      <div className="flex flex-col md:flex-row items-center justify-start gap-8 ">
         <div className="max-w-2xl text-left">
-          <h1 className={title({ className: "leading-[3.5rem]" })}>
+          <h1 className={title({ className: "text-5xl md:text-7xl leading-[3.5rem]" })}>
             What is Smart Extract?&nbsp;
           </h1>
           <br />
@@ -40,10 +41,10 @@ export default function SmartExtract() {
         </div>
       </div>
     </section>
-    <section className="mt-40 w-full flex justify-center">
+    <section className="mt-44 w-full flex justify-center px-6">
         <div className="flex flex-col md:flex-row items-center justify-start gap-8">
           <div className="max-w-2xl text-left">
-            <h1 className={subtitle({ size: "lg", className: "font-medium leading-[4rem]" })}>
+            <h1 className={subtitle({ size: "lg", className: "font-semibold md:font-medium md:leading-[4rem]" })}>
               Why should I choose <span className="underline underline-offset-8">Smart Extract</span>?
             </h1>
             <br />
@@ -60,24 +61,24 @@ export default function SmartExtract() {
             
           </div>
           <div className="max-w-[400px] flex justify-center md:max-w-[440px]">
-          <Image src="/resume2.jpg"></Image>
+          <Image className="w-0 md:w-auto" src="/resume2.jpg"></Image>
           </div>
         </div>
       </section>
-      <section className="mt-40 w-full flex justify-center">
+      <section className="mt-24 w-full flex justify-center">
         <div className="flex-row">
           <div className="flex justify-center max-w-2xl">
-            <h1 className={subtitle({ size: "lg", className: "font-medium leading-[3.5rem]"})}>
+            <h1 className={subtitle({ size: "lg", className: "font-semibold md:font-medium leading-[3.5rem]"})}>
               How it works?
             </h1>
             </div>
 
 
 
-            <div className="flex justify-center pt-8 pb-4">
+            <div className="flex justify-center pt-12 pb-3">
             <StepCard
             title="Upload Resume"
-            description="Candidates uploads resume while applying for the job. (PDF, DOCX, etc.) "
+            description="Candidates applies from various integrated job boards  and uploads their resume. (PDF, DOCX, etc.) "
             />
             </div>
             <div className="flex justify-center">
@@ -85,10 +86,10 @@ export default function SmartExtract() {
             </div>
 
             
-            <div className="flex justify-center pt-4 pb-4">
+            <div className="flex justify-center pt-3 pb-3">
             <StepCard
             title="Parsing & Extraction"
-            description="The system automatically parses and extracts key information using NLP and Machine Learning"
+            description="The system parses and extracts key information using NLP and Machine Learning and formats it into a uniform structure"
             />
             </div>
             <div className="flex justify-center">
@@ -97,14 +98,22 @@ export default function SmartExtract() {
 
 
 
-            <div className="flex justify-center pt-4 pb-4">
+            <div className="flex justify-center pt-3 pb-3">
             <StepCard
-            title="Upload Resume"
-            description="Candidates uploads resume while applying for the job. (PDF, DOCX, etc.) "
+            title="Ranking & Integration"
+            description="Parsed data is uniformly structured, and candidates are ranked by predefined requirements."
             />
             </div>
             <div className="flex justify-center">
               <Arrow className="w-10"/>
+            </div>
+
+
+            <div className="flex justify-center pt-3 pb-3">
+            <StepCard
+            title="Utilisation"
+            description="The extracted data is continuously updated as the candidate progresses through each step of the hiring process."
+            />
             </div>
           </div>
       </section></>

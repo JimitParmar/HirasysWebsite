@@ -295,8 +295,7 @@ export const Shield: React.FC<IconSvgProps> = (props) => (
 export const Check: React.FC<IconSvgProps> = (props) => (	
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1.75em"
-    height="1.75em"
+    className="min-h-4 min-w-4 max-h-4 max-w-4"
     viewBox="0 0 1024 1024"
     {...props}
   >
