@@ -67,10 +67,9 @@ export default function SmartExtract() {
       </section>
       <section className="mt-24 w-full flex justify-center">
         <div className="flex-row">
-          <div className="flex justify-center max-w-2xl">
-            <h1 className={subtitle({ size: "lg", className: "font-semibold md:font-medium leading-[3.5rem]"})}>
-              How it works?
-            </h1>
+          <div className="max-w-2xl">
+            <h1 className={subtitle({ size: "lg", className: "font-semibold text-center md:font-medium leading-[3.5rem]"})}>
+              How it works?</h1>
             </div>
 
 
@@ -116,6 +115,23 @@ export default function SmartExtract() {
             />
             </div>
           </div>
-      </section></>
+          
+      </section>
+      <div className="my-12 md:my-20 mx-4 md:mx-80 grid grid-rows-2 items-center ">
+            <h1 className="flex justify-center text-center leading-snug font-bold pb-2 md:pb-4 text-2xl md:text-5xl">Enhance your resume management process with Smart Extract</h1>
+            <Link
+              isExternal
+              className={buttonStyles({
+                className:"md:w-[240px] w-[200px] p-8 md:p-8 text-lg text-white font-semibold md:text-xl mx-auto",
+                color: "success",
+                radius: "full",
+                size: "lg",
+                variant: "shadow",
+              })}
+              href={siteConfig.links.docs}
+            >
+              Try Smart Extract
+            </Link>
+          </div></>
   );
 }
