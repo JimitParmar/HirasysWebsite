@@ -7,19 +7,19 @@ import { Arrow, Check } from "@/components/icons";
 import { AboutCard } from "@/components/card";
 import { InfoCard, StepCard } from "@/components/infocard";
 
-export default function SmartExtract() {
+export default function Examina() {
   return (
     <>
     <section className="w-full flex justify-center px-6">
-      <div className="flex flex-col md:flex-row items-center justify-start gap-8 ">
+      <div className="flex flex-col md:flex-row items-center justify-start gap-24 ">
         <div className="max-w-2xl text-left">
           <h1 className={title({ className: "text-5xl md:text-7xl leading-[3.5rem]" })}>
-            What is Smart Extract?&nbsp;
+            What is Examina?&nbsp;
           </h1>
           <br />
           <h2 className={description({ class: "pt-6 max-w-[32rem] " })}>
-            Smart Extract is a resume parsing tool that automates the process of extracting key information from resumes, such as contact details,
-            education, work experience, and skills. This helps streamline recruitment by saving time and ensuring access to relevant candidate information.
+          Examina module enables efficient applicant filtering based on specific skills or attributes. By utilizing weighted screening questions, 
+          you can automatically rate candidates, compare their responses quickly, and make better-informed decisions for the interview selection process.
           </h2>
           <div className="flex gap-4 pt-6">
             <Link
@@ -42,26 +42,15 @@ export default function SmartExtract() {
       </div>
     </section>
     <section className="mt-44 w-full flex justify-center px-6">
-        <div className="flex flex-col md:flex-row items-center justify-start gap-8">
-          <div className="max-w-2xl text-left">
-            <h1 className={subtitle({ size: "lg", className: "font-semibold md:font-medium md:leading-[4rem]" })}>
-              Why should I choose <span className="underline underline-offset-8">Smart Extract</span>?
-            </h1>
+        <div className="items-center gap-8">
+          <div className="max-w-3xl text-center">
+            <h1 className={subtitle({ size: "md", className: "font-semibold text-center md:font-medium md:leading-[4rem]" })}>
+              Types of Assessments</h1>
             <br />
-            <h2 className={description({ class: "max-w-[36rem] leading-[2rem]" })}>
-              Manual Screening can be easy, only if the number of resumes are handful. In today's job market conditions each job opening attracts 300 to 800 applicants on average.
-              The entire process can get time consuming and inefficient, without even taking in consideration of personal bias and missing out on good potential.<br/>With <span className="text-blue-600 dark:text-blue-500">Hirasys's</span> Smart Extract you can:<br/>
-              </h2>
-            <ul className="pt-3 text-lg">
-            <li className="py-2 flex items-center gap-3"><Check/><b>Increase the efficiency and productivity by up to <i>85%.</i></b></li> 
-              <li className="py-2 flex items-center gap-3"><Check/><b>Create a standardized format for all recieved resumes.</b></li>
-              <li className="py-2 flex items-center gap-3"><Check/><b>Automatically or Manually add the resume to your talent pool.</b></li>
-              <li className="py-2 flex items-center gap-3"><Check/><b>Reduce the cost of hiring by up to <i>70%.</i></b></li>
-            </ul>
+            <h2 className="text-lg font-medium text-center leading-[2rem]">
+              Hirasys makes it easier to evaluate candidate's skills and rate them accordingly. Use our pre-defined assessments or set up your own
+            </h2>
             
-          </div>
-          <div className="max-w-[400px] flex justify-center md:max-w-[440px]">
-          <Image className="w-0 md:w-auto" src="/resume2.jpg"></Image>
           </div>
         </div>
       </section>

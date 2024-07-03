@@ -1,5 +1,7 @@
 "use client"
 
+
+import { useRouter } from 'next/navigation';
 import React from "react";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownSection, DropdownItem, Button, cn} from "@nextui-org/react";
 import Link from "next/link";
@@ -27,7 +29,7 @@ export function Resource() {
   );
 }
 export function Features() {
-  const iconClasses = "text-xl text-default-500 pointer-events-none flex-shrink-0";
+  const router = useRouter();
 
 return (
   <Dropdown>
@@ -44,17 +46,19 @@ return (
       <DropdownItem
           description="A Versatile Resume Parser"
           key="smartextract"
-          href="features/SmartExtract"
+          onClick={() => router.push('/features/smartextract')}
           // startContent={<AddNoteIcon className={iconClasses} />}
         >
+          
         SmartExtract
           
         </DropdownItem>
         <DropdownItem
           description="Various types of Proctored tests"
+          key="examina"
+          onClick={() => router.push('/features/examina')}
           // startContent={<CopyDocumentIcon className={iconClasses} />}
-        >
-          Examina
+        >Examina
         </DropdownItem>
         <DropdownItem
           description="Conduct Coding Tests"

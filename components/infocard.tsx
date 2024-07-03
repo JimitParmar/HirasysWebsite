@@ -34,11 +34,11 @@ export function StepCard({title, description }:{
     description: string,
 }) {
   return (
-          <Card className="w-[285px] h-[240px] md:w-[290px] md:h-[190px] flex justify-center border-4 hover:bg-blue-400 dark:border-blue-600 border-blue-700">
+          <Card className="w-[285px] h-[240px] md:w-[290px] md:h-[190px] flex justify-center border-4 dark:bg-slate-800 dark:hover:bg-blue-600 hover:bg-blue-600 dark:border-blue-600 hover:text-white border-blue-600">
               <CardBody>
                   <div className="flex flex-col">
                       <p className="text-xl md:text-2xl font-semibold pt-2 pb-3 md:pb-3 text-center">{title}</p>
-                      <hr className="border-black pb-2 md:pb-0 mx-4 "/>
+                      <hr className="border-gray-300 border-1 pb-2 md:pb-0 mx-4 dark:border-white"/>
                       <p className="text-md md:text-sm font-medium pt-2 md:pt-3 px-2 text-center">{description}</p>
                   </div>
               </CardBody>
