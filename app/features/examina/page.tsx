@@ -6,6 +6,7 @@ import {Image} from "@nextui-org/image";
 import { Arrow, Check } from "@/components/icons";
 import { AboutCard } from "@/components/card";
 import { InfoCard, StepCard } from "@/components/infocard";
+import SideWindow from "@/components/tab";
 
 export default function Examina() {
   return (
@@ -50,64 +51,14 @@ export default function Examina() {
             <h2 className="text-lg font-medium text-center leading-[2rem]">
               Hirasys makes it easier to evaluate candidate's skills and rate them accordingly. Use our pre-defined assessments or set up your own
             </h2>
-            
+            <div className="my-16 mx-auto w-[1000px]">
+            <SideWindow/>
+            </div>
           </div>
         </div>
       </section>
-      <section className="mt-24 w-full flex justify-center">
-        <div className="flex-row">
-          <div className="max-w-2xl">
-            <h1 className={subtitle({ size: "lg", className: "font-semibold text-center md:font-medium leading-[3.5rem]"})}>
-              How it works?</h1>
-            </div>
-
-
-
-            <div className="flex justify-center pt-12 pb-3">
-            <StepCard
-            title="Upload Resume"
-            description="Candidates applies from various integrated job boards  and uploads their resume. (PDF, DOCX, etc.) "
-            />
-            </div>
-            <div className="flex justify-center">
-              <Arrow className="w-10 dark:stroke-white"/>
-            </div>
-
-            
-            <div className="flex justify-center pt-3 pb-3">
-            <StepCard
-            title="Parsing & Extraction"
-            description="The system parses and extracts key information using NLP and Machine Learning and formats it into a uniform structure"
-            />
-            </div>
-            <div className="flex justify-center">
-              <Arrow className="w-10 dark:stroke-white"/>
-            </div>
-
-
-
-            <div className="flex justify-center pt-3 pb-3">
-            <StepCard
-            title="Ranking & Integration"
-            description="Parsed data is uniformly structured, and candidates are ranked by predefined requirements."
-            />
-            </div>
-            <div className="flex justify-center">
-              <Arrow className="w-10 dark:stroke-white"/>
-            </div>
-
-
-            <div className="flex justify-center pt-3 pb-3">
-            <StepCard
-            title="Utilisation"
-            description="The extracted data is continuously updated as the candidate progresses through each step of the hiring process."
-            />
-            </div>
-          </div>
-          
-      </section>
       <div className="my-12 md:my-20 mx-4 md:mx-80 grid grid-rows-2 items-center ">
-            <h1 className="flex justify-center text-center leading-snug font-bold pb-2 md:pb-4 text-2xl md:text-5xl">Enhance your resume management process with Smart Extract</h1>
+            <h1 className="flex justify-center text-center leading-snug font-bold pb-2 md:pb-4 text-2xl md:text-5xl">Filter great candidates with Hirasys's Examina</h1>
             <Link
               isExternal
               className={buttonStyles({
@@ -119,7 +70,7 @@ export default function Examina() {
               })}
               href={siteConfig.links.docs}
             >
-              Try Smart Extract
+              Try Examina
             </Link>
           </div></>
   );
