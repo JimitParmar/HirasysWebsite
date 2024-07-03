@@ -29,11 +29,11 @@ export default function SideWindow() {
   ];
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex flex-col">
       <Tabs aria-label="Dynamic tabs" placement="start" items={tabs}>
         {(item) => (
-          <Tab key={item.id} className="w-[300px] text-2xl py-8" title={item.label}>
-            <Card className="-mt-8 text-lg w-[400px]">
+          <Tab key={item.id} className="w-[100px] md:w-[300px] text-xs md:text-2xl md:py-8" title={item.label}>
+            <Card className="-px-8 md:-mt-8 text-lg w-[220px] md:w-[400px]">
               <CardBody>
                 {item.image}
               </CardBody>

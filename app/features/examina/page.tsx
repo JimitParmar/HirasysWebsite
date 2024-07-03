@@ -44,14 +44,12 @@ export default function Examina() {
     </section>
     <section className="mt-44 w-full flex justify-center px-6">
         <div className="items-center gap-8">
-          <div className="max-w-3xl text-center">
+          <div className="md:max-w-3xl text-center">
             <h1 className={subtitle({ size: "md", className: "font-semibold text-center md:font-medium md:leading-[4rem]" })}>
               Types of Assessments</h1>
             <br />
-            <h2 className="text-lg font-medium text-center leading-[2rem]">
-              Hirasys makes it easier to evaluate candidate's skills and rate them accordingly. Use our pre-defined assessments or set up your own
-            </h2>
-            <div className="my-16 mx-auto w-[1000px]">
+              <p className="md:text-lg  md:font-medium text-center md:leading-[2rem]">Hirasys makes it easier to evaluate candidate's skills and rate them accordingly. Use our pre-defined assessments or set up your own </p>
+            <div className="my-8 md:my-16 mx-auto md:w-[1000px]">
             <SideWindow/>
             </div>
           </div>
