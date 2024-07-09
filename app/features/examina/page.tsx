@@ -49,13 +49,13 @@ export default function Examina() {
               Types of Assessments</h1>
             <br />
               <p className="md:text-lg  md:font-medium text-center md:leading-[2rem]">Hirasys makes it easier to evaluate candidate's skills and rate them accordingly. Use our pre-defined assessments or set up your own </p>
-            <div className="my-8 md:my-16 mx-auto md:w-[1000px]">
+            <div className="my-8 md:my-16 mx-auto transition-all delay-150 md:w-[1000px]">
             <SideWindow/>
             </div>
           </div>
         </div>
       </section>
-      <div className="my-12 md:my-20 mx-4 md:mx-80 grid grid-rows-2 items-center ">
+      <div className="my-12 md:my-12 mx-4 md:mx-80 grid grid-rows-2 items-center ">
             <h1 className="flex justify-center text-center leading-snug font-bold pb-2 md:pb-4 text-2xl md:text-5xl">Filter great candidates with Hirasys's Examina</h1>
             <Link
               isExternal

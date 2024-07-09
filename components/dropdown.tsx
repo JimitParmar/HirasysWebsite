@@ -18,7 +18,7 @@ export function Resource() {
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
-        <DropdownItem key="help">Documentation</DropdownItem>
+        <DropdownItem key="help" href="/docs">Documentation</DropdownItem>
         <DropdownItem key="help">Help Center</DropdownItem>
         <DropdownItem key="tutorials">Tutorials</DropdownItem>
         <DropdownItem key="forum">Forum</DropdownItem>
